@@ -14,7 +14,7 @@
             
             var displayUploads = function(data){
                 var uploads = document.getElementById('uploads'),
-                        ahref,
+                        img,
                         x;
                 for(x = 0; x < data.length; x = x+1){
                       var link = data[x].file;
