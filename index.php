@@ -17,12 +17,18 @@
                         ahref,
                         x;
                 for(x = 0; x < data.length; x = x+1){
-                    ahref = document.createElement('a');
-                    ahref.href = data[x].file;
-                    ahref.innerText = data[x].name;
-                    
-                    console.log(data);
-                    uploads.appendChild(ahref);
+                    // ahref = document.createElement('a');
+                    // ahref.href = data[x].file;
+                    // ahref.innerText = data[x].name;
+                    // uploads.appendChild(ahref);
+                      var link = data[x].file;
+                      var name = data[x].name;
+                      
+                      img = document.createElement("img");
+                      img.src = link;
+                      img.setAttribute("class","image");
+                      img.setAttribute("alt", name);
+                      uploads.appendChild(img);
                 }
             };
             
