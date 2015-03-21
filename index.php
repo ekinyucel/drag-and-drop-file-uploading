@@ -17,10 +17,6 @@
                         ahref,
                         x;
                 for(x = 0; x < data.length; x = x+1){
-                    // ahref = document.createElement('a');
-                    // ahref.href = data[x].file;
-                    // ahref.innerText = data[x].name;
-                    // uploads.appendChild(ahref);
                       var link = data[x].file;
                       var name = data[x].name;
                       
